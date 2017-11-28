@@ -1,8 +1,84 @@
-fullmenu{
+@import 'fonts'; 
+
+.gradient{
+	background-image: -ms-linear-gradient(top left, #DDF8FF 0%, #B5FFBD 100%);
+	background-image: -moz-linear-gradient(top left, #DDF8FF 0%, #B5FFBD 100%);
+	background-image: -o-linear-gradient(top left, #DDF8FF 0%, #B5FFBD 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #DDF8FF), color-stop(100, #B5FFBD));
+	background-image: -webkit-linear-gradient(top left, #DDF8FF 0%, #B5FFBD 100%);
+	background-image: linear-gradient(to bottom right, #DDF8FF 0%, #B5FFBD 100%);
+}
+
+
+.menu_toggle{
+	padding: 16px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+	
+	a{
+		width: 30px;
+    	height: 30px;
+    	display: block;
+    	position: relative;
+	}
+}
+
+.fullmenu{
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
 	left: 0;
-	background: #dcdcdc;
+	background: #ffffff;
+	display: block;
+
+	.menu_title {
+		position: absolute;
+		font-family: 'Circular Std';
+		font-weight: 900;
+		color: #95989A;
+		opacity: 0;
+		font-size: 10rem;
+		left: -50px;
+	}
+
+	.column.is-half{
+		width: 0%;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.main_menu {
+
+		.menu_item {
+			opacity: 0;
+
+			a {
+				font-family: 'Circular Std';
+				font-weight: 900;
+				padding: 0 3rem;
+				color: #95989A;
+				font-size: 3rem;
+			}
+		}
+	}
+
+	.sec_menu{
+		padding: 0 3rem;
+
+		.menu_item {
+			opacity: 0;
+			display: inline;
+
+			a {
+				font-family: 'Circular Std';
+			    font-weight: 900;
+			    padding-left: 1rem;
+			    color: #95989A;
+			    font-size: 1rem;
+			}
+		}
+	}
 }

@@ -6,6 +6,7 @@
 	<title>Test menu</title>
 	
 	<script src="js/animejs/anime.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 	<link rel="stylesheet" type="text/css" href="style/css/bulma.css">
@@ -17,27 +18,42 @@
 
 	<header>
 		<div class="menu_toggle">
-			<span>A</span>
+			<a href="#">A</a>
 		</div>
 	</header>
 
-	<fullmenu class="columns is-vcentered is-marginless">
+	<section class="columns is-vcentered is-marginless is-fullheight fullmenu">
 
-		<div class="column">
+		<section class="column hero is-half is-fullheight is-vcentered">
+
+			<span class="menu_title">
+				MENU
+			</span>
 
 			<ul class="main_menu">
-				<li class="menu_item">uno</li>
-				<li class="menu_item">due</li>
-				<li class="menu_item">tre</li>
+				<li class="menu_item"><a href="">Dashboard</a></li>
+				<li class="menu_item"><a href="">Sites and code</a></li>
+				<li class="menu_item"><a href="">Account</a></li>
+				<li class="menu_item"><a href="">Payments</a></li>
 			</ul>
 
-		</div>
+			<ul class="sec_menu">
+				<li class="menu_item"><a href="">Documentation</a></li>
+				<li class="menu_item"><a href="">FAQ</a></li>
+				<li class="menu_item"><a href="">Contacts</a></li>
+			</ul>
+				
+			</ul>
 
-		<div class="column">2
-		</div>
+
+		</section>
+
+		<section class="column hero is-half is-fullheight gradient">
+			
+		</section>
 
 		
-	</fullmenu>
+	</section>
 
 	<script src="js/main.js"></script>
 

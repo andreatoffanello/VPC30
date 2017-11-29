@@ -46,6 +46,6 @@ menuTimeline
 });
 
 document.querySelector('.menu_toggle a').onclick = function() {
-  menuTimeline.play();
-  menuTimeline.reverse();
+    menuTimeline.play();
+    menuTimeline.reverse();
 };
